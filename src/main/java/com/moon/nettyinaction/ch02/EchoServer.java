@@ -8,6 +8,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 import java.net.InetSocketAddress;
 
+/**
+ * 服务端启动类。
+ * @author Chen
+ */
 public class EchoServer {
 
     private final int port;
@@ -26,7 +30,7 @@ public class EchoServer {
                     .localAddress(new InetSocketAddress(port))
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+                        protected void initChannel(SocketChannel socketChannel) {
                             socketChannel.pipeline().addLast(serverHandler);
                         }
                     });
