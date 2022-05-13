@@ -13,7 +13,7 @@ import io.netty.util.CharsetUtil;
  * @date 2022年05月13日
  */
 @Sharable
-public class ChannelHandler extends SimpleChannelInboundHandler<ByteBuf> {
+public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
     /**
      * 与服务器建立连接完成后被调用
