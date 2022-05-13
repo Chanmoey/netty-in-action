@@ -1,4 +1,4 @@
-package com.moon.nettyinaction.ch02;
+package com.moon.nettyinaction.ch02.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -57,8 +57,8 @@ public class EchoClient {
                     "Usage: " + EchoClient.class.getSimpleName() +
                             "<host> <port>"
             );
-            host = "172.0.0.1";
-            port = 10800;
+            host = "localhost";
+            port = 10086;
         } else {
             host = args[0];
             port = Integer.parseInt(args[1]);
