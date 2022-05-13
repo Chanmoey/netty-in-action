@@ -9,7 +9,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
- * 新建连接的处理类。
+ * 服务端的新建连接的处理类。
  *
  * @author Chanmoey
  * @Data 2022/5/13
