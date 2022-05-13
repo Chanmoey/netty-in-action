@@ -1,4 +1,4 @@
-package com.moon.nettyinaction.ch02;
+package com.moon.nettyinaction.ch02.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -49,7 +49,7 @@ public class EchoServer {
                     "Usage: " + EchoServer.class.getSimpleName()
                             + "<port>"
             );
-            port = 10000;
+            port = 10086;
         } else {
             port = Integer.parseInt(args[0]);
         }
