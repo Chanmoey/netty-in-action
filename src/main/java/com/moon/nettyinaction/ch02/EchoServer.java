@@ -43,13 +43,16 @@ public class EchoServer {
     }
 
     public static void main(String[] args) throws Exception {
+        int port;
         if (args.length != 1) {
             System.err.println(
                     "Usage: " + EchoServer.class.getSimpleName()
                             + "<port>"
             );
+            port = 10000;
+        } else {
+            port = Integer.parseInt(args[0]);
         }
-        int post = Integer.parseInt(args[0]);
-        new EchoServer(post).start();
+        new EchoServer(port).start();
     }
 }
